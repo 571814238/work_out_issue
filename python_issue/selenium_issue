@@ -1,0 +1,7 @@
+1.selenium 引用本地的配置文件cookie等，使用options，user-data-dir需要去掉default：
+  from selenium import webdriver
+    options = webdriver.ChromeOptions()
+    options.add_argument(
+      r"user-data-dir=C:\Users\小依依呀呀\AppData\Local\Google\Chrome\User Data")
+    browser = webdriver.Chrome(options=options, executable_path=r'F:\MY T\PYTHON\pyhton3.7\chromedriver.exe')
+
